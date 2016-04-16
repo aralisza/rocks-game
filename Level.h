@@ -15,8 +15,8 @@ public:
      *
      * and use the following characters to make the puzzle
      * [space]  : clear path
-     * r        : rocks
-     * w        : wall
+     * o        : rocks
+     * X        : wall
      */
     vector< vector<char> > board;
     bool win;
@@ -46,6 +46,13 @@ public:
 class TestLevel : public Level {
 public:
     TestLevel();
+
+    void reset();
+};
+
+class RSE : public Level {
+public:
+    RSE();
 
     void reset();
 };

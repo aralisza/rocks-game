@@ -36,7 +36,7 @@ void Level::printBoard() {
 // this is useful because filling vectors is a pain.
 void Level::convertBoard(vector<char*> aboard, int col) {
     vector< vector<char> > newb;
-    for (size_t i = 0; i < col; i++) {
+    for (size_t i = 0; i < aboard.size(); i++) {
         newb.push_back(vector<char>(aboard[i], aboard[i] + col));
     }
 
@@ -88,7 +88,7 @@ void Level::move(int* xy, char dir) {
         board[xy[1]][xy[0]] = ' ';
         board[targ[1]][targ[0]] = cur;
     }
-    else if (board[targ[1]][targ[0]] == 'r') {
+    else if (board[targ[1]][targ[0]] == 'o') {
         int next[2];
         next[0] = getTargetPosn(targ, dir)[0];
         next[1] = getTargetPosn(targ, dir)[1];

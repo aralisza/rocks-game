@@ -16,7 +16,7 @@ public:
         curLev = 0;
 
         TestLevel *l1 = new TestLevel;
-        TestLevel *l2 = new TestLevel;
+        RSE *l2 = new RSE;
         TestLevel *l3 = new TestLevel;
 
         levels.push_back(l1);

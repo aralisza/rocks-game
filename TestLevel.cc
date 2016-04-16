@@ -12,13 +12,35 @@ TestLevel::TestLevel() {
 void TestLevel::reset() {
     vector<char*> aboard;
 
-    aboard.push_back((char[5]){'w', 'w', 'e', 'w', 'w'});
-    aboard.push_back((char[5]){'w', ' ', 'r', ' ', 'w'});
-    aboard.push_back((char[5]){'w', ' ', ' ', ' ', 'w'});
-    aboard.push_back((char[5]){'w', 'p', ' ', ' ', 'w'});
-    aboard.push_back((char[5]){'w', 'w', 'w', 'w', 'w'});
+    aboard.push_back((char[5]){'X', 'X', 'e', 'X', 'X'});
+    aboard.push_back((char[5]){'X', ' ', 'o', ' ', 'X'});
+    aboard.push_back((char[5]){'X', ' ', ' ', ' ', 'X'});
+    aboard.push_back((char[5]){'X', 'p', ' ', ' ', 'X'});
+    aboard.push_back((char[5]){'X', 'X', 'X', 'X', 'X'});
 
     convertBoard(aboard, 5);
+
+    win = false;
+}
+
+RSE::RSE() {
+    reset();
+}
+
+void RSE::reset() {
+    vector<char*> aboard;
+
+    aboard.push_back((char[9]){'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X'});
+    aboard.push_back((char[9]){'X', 'X', 'X', 'X', 'e', 'X', 'X', 'X', 'X'});
+    aboard.push_back((char[9]){'X', 'X', 'X', ' ', ' ', ' ', 'X', 'X', 'X'});
+    aboard.push_back((char[9]){'X', 'X', 'o', 'o', ' ', 'o', 'o', 'X', 'X'});
+    aboard.push_back((char[9]){'X', 'X', ' ', 'o', 'o', 'o', ' ', 'X', 'X'});
+    aboard.push_back((char[9]){'X', 'X', 'o', ' ', ' ', ' ', 'o', 'X', 'X'});
+    aboard.push_back((char[9]){'X', 'X', ' ', 'o', 'o', 'o', ' ', 'X', 'X'});
+    aboard.push_back((char[9]){'X', 'X', ' ', ' ', 'p', ' ', ' ', 'X', 'X'});
+    aboard.push_back((char[9]){'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X'});
+
+    convertBoard(aboard, 9);
 
     win = false;
 }
