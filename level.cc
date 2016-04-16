@@ -88,7 +88,7 @@ void Level::move(int* xy, char dir) {
         board[xy[1]][xy[0]] = ' ';
         board[targ[1]][targ[0]] = cur;
     }
-    else if (board[targ[1]][targ[0]] == 'o') {
+    else if (board[targ[1]][targ[0]] == 'O') {
         int next[2];
         next[0] = getTargetPosn(targ, dir)[0];
         next[1] = getTargetPosn(targ, dir)[1];

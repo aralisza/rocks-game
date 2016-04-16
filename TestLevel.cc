@@ -13,7 +13,7 @@ void TestLevel::reset() {
     vector<char*> aboard;
 
     aboard.push_back((char[5]){'X', 'X', 'e', 'X', 'X'});
-    aboard.push_back((char[5]){'X', ' ', 'o', ' ', 'X'});
+    aboard.push_back((char[5]){'X', ' ', 'O', ' ', 'X'});
     aboard.push_back((char[5]){'X', ' ', ' ', ' ', 'X'});
     aboard.push_back((char[5]){'X', 'p', ' ', ' ', 'X'});
     aboard.push_back((char[5]){'X', 'X', 'X', 'X', 'X'});
@@ -33,10 +33,10 @@ void RSE::reset() {
     aboard.push_back((char[9]){'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X'});
     aboard.push_back((char[9]){'X', 'X', 'X', 'X', 'e', 'X', 'X', 'X', 'X'});
     aboard.push_back((char[9]){'X', 'X', 'X', ' ', ' ', ' ', 'X', 'X', 'X'});
-    aboard.push_back((char[9]){'X', 'X', 'o', 'o', ' ', 'o', 'o', 'X', 'X'});
-    aboard.push_back((char[9]){'X', 'X', ' ', 'o', 'o', 'o', ' ', 'X', 'X'});
-    aboard.push_back((char[9]){'X', 'X', 'o', ' ', ' ', ' ', 'o', 'X', 'X'});
-    aboard.push_back((char[9]){'X', 'X', ' ', 'o', 'o', 'o', ' ', 'X', 'X'});
+    aboard.push_back((char[9]){'X', 'X', 'O', 'O', ' ', 'O', 'O', 'X', 'X'});
+    aboard.push_back((char[9]){'X', 'X', ' ', 'O', 'O', 'O', ' ', 'X', 'X'});
+    aboard.push_back((char[9]){'X', 'X', 'O', ' ', ' ', ' ', 'O', 'X', 'X'});
+    aboard.push_back((char[9]){'X', 'X', ' ', 'O', 'O', 'O', ' ', 'X', 'X'});
     aboard.push_back((char[9]){'X', 'X', ' ', ' ', 'p', ' ', ' ', 'X', 'X'});
     aboard.push_back((char[9]){'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X'});
 

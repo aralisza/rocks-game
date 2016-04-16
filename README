@@ -1,0 +1,39 @@
+======================================================
+
+        ######
+        #     #   ####    ####   #    #   ####
+        #     #  #    #  #    #  #   #   #
+        ######   #    #  #       ####     ####
+        #   #    #    #  #       #  #         #
+        #    #   #    #  #    #  #   #   #    #
+        #     #   ####    ####   #    #   ####
+
+======================================================
+
+~~~~~~~~~~~~~~~~~~~  How to Play  ~~~~~~~~~~~~~~~~~~~~
+You are represented with the letter 'p'
+
+Push the rocks so that you clear a path to the exit.
+Rocks are represented with the letter 'O'
+
+You can only move rocks if there is a free space to
+push them to.
+
+Exits are marked with the letter 'e'
+
+Walls are represented with the letter 'X'.
+Walls are immovable.
+
+You beat the level when you move your player to the
+exit.
+
+Controls:
+w - up
+a - left
+s - down
+d - right
+r - reset
+[ - previous level
+] - next level
+
+Have fun!

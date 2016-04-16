@@ -15,7 +15,7 @@ public:
      *
      * and use the following characters to make the puzzle
      * [space]  : clear path
-     * o        : rocks
+     * O        : rocks
      * X        : wall
      */
     vector< vector<char> > board;

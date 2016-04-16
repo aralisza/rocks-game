@@ -67,6 +67,8 @@ int main() {
     char input;
     bool control = true;
 
+    printf("======================================================\n\n        ######\n        #     #   ####    ####   #    #   ####\n        #     #  #    #  #    #  #   #   #\n        ######   #    #  #       ####     ####\n        #   #    #    #  #       #  #         #\n        #    #   #    #  #    #  #   #   #    #\n        #     #   ####    ####   #    #   ####\n\n======================================================\n\n~~~~~~~~~~~~~~~~~~~  How to Play  ~~~~~~~~~~~~~~~~~~~~\n\nYou are represented with the letter 'p'\n\nPush the rocks so that you clear a path to the exit.\nRocks are represented with the letter 'O'\n\nYou can only move rocks if there is a free space to\npush them to.\n\nExits are marked with the letter 'e'\n\nWalls are represented with the letter 'X'.\nWalls are immovable.\n\nYou beat the level when you move your player to the\nexit.\n\nControls:\nw - up\na - left\ns - down\nd - right\nr - reset\n[ - previous level\n] - next level\n\nHave fun!\n\n");
+
     while (control) {
         g.print();
 
