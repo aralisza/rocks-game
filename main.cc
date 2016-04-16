@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <vector>
 #include <iostream>
-#include "TestLevel.cc"
+#include "Game.cc"
 
 using namespace std;
 

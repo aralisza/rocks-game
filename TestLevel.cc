@@ -9,11 +9,6 @@ TestLevel::TestLevel() {
     reset();
 }
 
-TestLevel::~TestLevel() {
-    free(&board);
-    free(&win);
-}
-
 void TestLevel::reset() {
     vector<char*> aboard;
 

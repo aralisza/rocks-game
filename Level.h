@@ -47,7 +47,5 @@ class TestLevel : public Level {
 public:
     TestLevel();
 
-    ~TestLevel();
-
     void reset();
 };

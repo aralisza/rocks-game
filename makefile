@@ -1,10 +1,10 @@
 CXXFLAGS =
 all: main
-main: Level.o Concrete.o
-		g++ $(CXXFLAGS) Level.o main.o
+main: Level.o Game.o
+		g++ $(CXXFLAGS) Level.o Game.o
 Level.o: Level.cc
 		g++ $(CXXFLAGS) -c Level.cc
-Concrete.o: TestLevel.cc main.cc
-		g++ $(CXXFLAGS) -c TestLevel.cc main.cc
+Game.o: TestLevel.cc Game.cc
+		g++ $(CXXFLAGS) -c TestLevel.cc Game.cc
 clean:
 		rm *.o

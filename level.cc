@@ -35,9 +35,12 @@ void Level::printBoard() {
 // builds the board from a vector of arrays.
 // this is useful because filling vectors is a pain.
 void Level::convertBoard(vector<char*> aboard, int col) {
+    vector< vector<char> > newb;
     for (size_t i = 0; i < col; i++) {
-        board.push_back(vector<char>(aboard[i], aboard[i] + col));
+        newb.push_back(vector<char>(aboard[i], aboard[i] + col));
     }
+
+    board = newb;
 }
 
 // returns an array of [x, y] player position
