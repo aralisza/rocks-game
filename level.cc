@@ -26,8 +26,8 @@ public:
     vector< vector<char> > board;
     bool win; // 1 = win, 0 = not yet
 
-    // initializes the board
-    virtual void init() = 0;
+    // resets the board
+    virtual void reset() = 0;
 
     // prints the level
     void printBoard() {
@@ -165,10 +165,10 @@ class TestLevel : public Level {
 public:
 
     TestLevel() {
-        init();
+        reset();
     }
 
-    void init() {
+    void reset() {
         vector<char*> aboard;
 
         aboard.push_back((char[5]){'w', 'w', 'e', 'w', 'w'});
