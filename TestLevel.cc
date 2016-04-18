@@ -44,3 +44,24 @@ void RSE::reset() {
 
     win = false;
 }
+
+RGB::RGB() {
+    reset();
+}
+
+void RGB::reset() {
+    vector<char*> aboard;
+
+    aboard.push_back((char[7]){'X', 'X', 'X', 'X', 'X', 'X', 'X'});
+    aboard.push_back((char[7]){'X', 'X', 'X', 'X', 'e', 'X', 'X'});
+    aboard.push_back((char[7]){'X', ' ', ' ', ' ', ' ', ' ', 'X'});
+    aboard.push_back((char[7]){'X', ' ', 'O', 'X', 'X', ' ', 'X'});
+    aboard.push_back((char[7]){'X', ' ', 'O', ' ', ' ', 'X', 'X'});
+    aboard.push_back((char[7]){'X', 'X', ' ', 'O', 'O', 'X', 'X'});
+    aboard.push_back((char[7]){'X', 'X', ' ', ' ', ' ', 'p', 'X'});
+    aboard.push_back((char[7]){'X', 'X', 'X', 'X', 'X', 'X', 'X'});
+
+    convertBoard(aboard, 7);
+
+    win = false;
+}

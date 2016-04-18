@@ -56,3 +56,10 @@ public:
 
     void reset();
 };
+
+class RGB : public Level {
+public:
+    RGB();
+
+    void reset();
+};

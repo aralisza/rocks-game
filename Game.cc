@@ -17,7 +17,7 @@ public:
 
         TestLevel *l1 = new TestLevel;
         RSE *l2 = new RSE;
-        TestLevel *l3 = new TestLevel;
+        RGB *l3 = new RGB;
 
         levels.push_back(l1);
         levels.push_back(l2);
