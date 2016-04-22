@@ -7,22 +7,26 @@ using namespace std;
 
 // prints the level
 void Level::printBoard() {
-    for (vector<char> row : board) {
+    //for (vector<char> row: board) {
+    for (int i =0; i < board.size(); i++) {
         // prints divider between rows
-        for (size_t i = 0; i < row.size(); i++) {
+        //for (char c: board[i]) {
+        for (int j = 0; j < board[i].size(); j++) {
             printf("|---");
         }
         printf("|\n");
 
         // prints elements of the row
-        for (char c : row) {
-            printf("| %c ", c);
+       // for (char c : row) {
+	for (int k = 0; k < board[i].size(); k++) {
+            printf("| %c ", board[i][k]);
         }
         printf("|\n");
     }
 
     // prints last divider
-    for (size_t i = 0; i < board[0].size(); i++) {
+    // for (char c: board[0]) {
+	for (int l = 0; l < board[0].size(); l++) {
         printf("|---");
     }
     printf("|\n\n");

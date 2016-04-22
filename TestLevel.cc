@@ -65,3 +65,25 @@ void RGB::reset() {
 
     win = false;
 }
+
+ESV::ESV() {
+    reset();
+}
+
+void ESV::reset() {
+    vector<char*> aboard;
+
+    aboard.push_back((char[9]){'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X'});
+    aboard.push_back((char[9]){'X', 'X', 'X', 'X', 'X', 'X', 'X', 'e', 'X'});
+    aboard.push_back((char[9]){'X', ' ', ' ', ' ', 'X', 'X', ' ', ' ', 'X'});
+    aboard.push_back((char[9]){'X', 'O', ' ', 'O', ' ', 'O', ' ', ' ', 'X'});
+    aboard.push_back((char[9]){'X', ' ', 'O', ' ', 'O', ' ', 'X', 'X', 'X'});
+    aboard.push_back((char[9]){'X', ' ', ' ', 'O', ' ', 'O', 'X', 'X', 'X'});
+    aboard.push_back((char[9]){'X', ' ', ' ', ' ', 'O', ' ', ' ', ' ', 'X'});
+    aboard.push_back((char[9]){'X', ' ', ' ', ' ', ' ', 'p', ' ', ' ', 'X'});
+    aboard.push_back((char[9]){'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X'});
+
+    convertBoard(aboard, 9);
+
+    win = false;
+}
